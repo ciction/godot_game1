@@ -1,0 +1,32 @@
+[gd_scene load_steps=13 format=1]
+
+[ext_resource path="res://kirby_walk_cycle/kirby_3_1.tex" type="Texture" id=1]
+[ext_resource path="res://kirby_walk_cycle/kirby_3_10.tex" type="Texture" id=2]
+[ext_resource path="res://kirby_walk_cycle/kirby_3_2.tex" type="Texture" id=3]
+[ext_resource path="res://kirby_walk_cycle/kirby_3_3.tex" type="Texture" id=4]
+[ext_resource path="res://kirby_walk_cycle/kirby_3_4.tex" type="Texture" id=5]
+[ext_resource path="res://kirby_walk_cycle/kirby_3_5.tex" type="Texture" id=6]
+[ext_resource path="res://kirby_walk_cycle/kirby_3_6.tex" type="Texture" id=7]
+[ext_resource path="res://kirby_walk_cycle/kirby_3_7.tex" type="Texture" id=8]
+[ext_resource path="res://kirby_walk_cycle/kirby_3_8.tex" type="Texture" id=9]
+[ext_resource path="res://kirby_walk_cycle/kirby_3_9.tex" type="Texture" id=10]
+[ext_resource path="res://Kirby.gd" type="Script" id=11]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="AnimatedSprite" type="AnimatedSprite"]
+
+transform/pos = Vector2( 20, 20 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 6
+script/script = ExtResource( 11 )
+
+
